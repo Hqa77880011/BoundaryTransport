@@ -14,7 +14,7 @@ Inspection environment: Python 3.13.5, NumPy 2.1.3, PyTorch 2.7.1+cu118, SciPy 1
 
 ## Data and preprocessing
 
-Generate synthetic class-conditioned features. Application open-set data use label -1 only for held-out unknown classes.
+Generate Gaussian features labeled by the argmax of the first three coordinates. Application open-set data use label -1 only for held-out unknown classes.
 
 ```bash
 boundarytransport demo --output data/generated.npz --count 96 --config config.json --seed 13
